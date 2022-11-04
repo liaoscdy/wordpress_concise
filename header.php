@@ -3,8 +3,10 @@
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link rel="shortcut icon" href="/wp-content/uploads/blogger_small.png">
 	<?php wp_head(); ?>
 </head>
+
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
@@ -23,6 +25,7 @@
 						<?php bloginfo( 'name' ); ?>
                     </a>
 				<?php endif; ?>
+                <p></p>
                 <p class="description"><?php bloginfo( 'description' ); ?></p>
             </div>
 			<?php if ( has_nav_menu( 'primary' ) ) : ?>

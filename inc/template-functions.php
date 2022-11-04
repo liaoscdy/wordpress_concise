@@ -78,7 +78,7 @@ function maupassant_post_thumbnail() {
  */
 function maupassant_comments_popup_link() {
 	comments_popup_link(
-		__( 'No Comments', 'maupassant' ),
+		__( '', 'maupassant' ),
 		__( '1 Comment', 'maupassant' ),
 		__( '% Comments', 'maupassant' )
 	);

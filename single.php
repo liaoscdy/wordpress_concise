@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="col-8" id="main">
+<div class="col-12" id="main">
     <div class="res-cons">
 		<?php
 		while ( have_posts() ) :
@@ -15,5 +15,4 @@
     </div>
 </div>
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
