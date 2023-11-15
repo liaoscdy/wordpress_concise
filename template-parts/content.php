@@ -16,8 +16,12 @@
 
     <ul class="post-meta">
         <li><?php the_time( get_option( 'date_format' ) ) ?></li>
-        <li><?php echo '&nbsp;标签: ' . get_the_tag_list( ' ', ', ' ) ?></li>
-        <li><?php echo '&nbsp;分类: ' . get_the_category_list( ', ', '', get_the_ID()) ?></li>
+        <?php
+        if ( !is_page() ) {
+            echo "<li>&nbsp;标签: " . get_the_tag_list( ' ', ', ' ) . "</li>";
+            echo "<li>&nbsp;分类: " . get_the_category_list( ', ', '', get_the_ID()) . "</li>";
+        }
+        ?>
         <li class="comment-count">
             <?php maupassant_comments_popup_link(); ?>
         </li>
