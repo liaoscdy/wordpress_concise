@@ -1,3 +1,4 @@
 .idea/
 tmp/
-maupassant.zip
+.DS_Store
+.vscode/
